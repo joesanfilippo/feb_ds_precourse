@@ -85,6 +85,7 @@ least one cat; what is the probability that both pets are cats?
 #         self.count = count
 
 # dope_wheels = Wheelset(17, 23, 'silver', 'aluminum', 4)
+# lame_wheels = Wheelset(13, 9, 'black', 'steel', 4)
 
 # class Car:
 #     def __init__(self, name, wheelset, color, spoiler_color=None, location=[0, 0]):
@@ -115,9 +116,9 @@ class Person:
 lance = Person('Lance', 70, 38)
 print(lance.adult)
 
-# no_sp_car = Car('Pontiac', 4, 'Red')
+# no_sp_car = Car('Pontiac', 'Red')
 # sp_car = Car('Ferrari', dope_wheels, 'red', 'red', [110, 135])
 
 # print(sp_car.location)
-# print(sp_car.drive_north(10))
+# sp_car.drive_north(10)
 # print(sp_car.location)
