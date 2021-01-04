@@ -99,8 +99,8 @@ least one cat; what is the probability that both pets are cats?
 #         if wheelset.count > 4:
 #             self.oversized = True
 
-#     def drive_north(self, distance):
-#         self.location[0] += distance/10
+#       def drive_north(self, distance)
+#           self.location[0] += distance/10
 
 class Person:
     def __init__(self, name, height, age):
