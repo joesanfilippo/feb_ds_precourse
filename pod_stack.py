@@ -33,7 +33,13 @@ class Stack():
         lst : []
             The list that is to be converted to a stack
         '''
-        pass
+        self.stack = lst
+        
+        counter = 0 
+        for i in lst:
+            counter += 1
+        
+        self.length = counter
 
     def __len__(self):
         '''
@@ -49,7 +55,11 @@ class Stack():
         length : int
             An integer representing the number of objects in the stack
         '''
-        pass
+        counter = 0
+        for i in lst:
+            counter += 1
+        return counter
+        
 
     def push(self, obj):
         '''
@@ -63,7 +73,8 @@ class Stack():
         obj : Any
             The object being added to the top of the stack
         '''
-        pass
+        self.stack = self.stack + obj.stack
+        
 
     def peek(self):
         '''
@@ -80,7 +91,7 @@ class Stack():
         obj : Any
             The object from the top of the stack
         '''
-        pass
+        return self.stack[-1]
 
     def pop(self):
         '''
@@ -96,7 +107,9 @@ class Stack():
         obj : Any
             The object being returned from the top of the stack
         '''
-        pass
+        pop_item = self.stack[-1]
+        del self.stack[-1]
+        return pop_item
 
     def empty(self):
         '''
@@ -112,4 +125,5 @@ class Stack():
         stack : Stack
             An empty stack
         '''
-        pass
+        self.stack = []
+        return self.stack
