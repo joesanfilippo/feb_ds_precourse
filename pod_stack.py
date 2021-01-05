@@ -7,9 +7,9 @@ method.
 This however, does not provide much insight into how a stack is implemented
 under the hood.
 
-In the class you're defining, do not use any of these methods, and instead
-write your own. You'll have to use lists to implement the stack, but each
-method needs to be implemented from scratch.
+In the class you're defining, do not use any of these methods (except what was
+mentioned for peek()), and instead write your own. You'll have to use lists to
+implement the stack, but each method needs to be implemented from scratch.
 
 HINT: You'll need to instantiate "empty lists" of the appropriate length,
 and then "fill" the lists with the values from the original list.
